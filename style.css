@@ -2,9 +2,11 @@ body {
   scroll-behavior: smooth;
 }
 
+
 section {
   padding-top: 80px;
 }
+
 
 #inicio {
   background-image: url('./assets/images/practicas-desarollo-software.jpeg');
@@ -18,25 +20,54 @@ section {
 
 #inicio .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  display: inline-block;
+  /* display: inline-block; */
 }
 
-.text-highlight {
+
+/* .text-highlight {
   color: #ffc107;
   font-weight: 700;
-}
+} */
 
 #inicio h1,
 #inicio p {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-footer a {
-  transition: color 0.3s ease;
+
+.logo{
+  width: 50px;
 }
 
-footer a:hover {
-  color: #ffc107;
+h1{
+  font-family:montserrat;
+  margin-bottom: 0px;
+}
+
+.lead{
+  font-size: medium;
+  color: #c7c7c7;
+}
+.spanOne{
+  color: rgb(58, 255, 183);
+}
+.spanTwo{
+  font-size:large;
+  color: rgb(255, 0, 157);
+}
+
+.boton-home{
+  background-color:  rgb(58, 255, 183);
+  color: black;
+  border: none;
+}
+
+.boton-home:hover{
+  background-color:rgb(255, 0, 157);
+}
+
+footer a {
+  transition: color 0.3s ease;
 }
 
 #carousel-tecnologias {
@@ -44,41 +75,6 @@ footer a:hover {
   width: max-content;
 }
 
-
-
-/* .carousel-container {
-  width: 100px;
-  overflow: hidden;
- } */
-
-/* .carousel-track {
-  transition: transform 0.5s ease-in-out;
-} */
-/*
-.carousel-track img {
-  width: 90px;
-  height: 60px;
-  object-fit: contain;
-  margin: 0 20px; Aumentado el espacio entre logos */
-  /* flex-shrink: 0; */
-/* } */
-
-/* Flechas simples sin círculo */
-/* #btn-prev,
-#btn-next {
-  border: none;
-  background: transparent;
-  font-size: 2rem;
-  color: #333;
-  padding: 0 10px;
-  cursor: pointer;
-  transition: color 0.3s ease;
-} */
-
-/* #btn-prev:hover,
-#btn-next:hover {
-  color: #007bff;
-} */
 
 .carousel-wrapper {
   position: relative;
@@ -125,23 +121,6 @@ footer a:hover {
 .carousel-arrow.right {
   right: -40px;
 }
-
-/* .certificado-card {
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
-  cursor: pointer;
-  border: 2px solid transparent;
-}
-
-.certificado-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(0, 123, 255, 0.6);
-}
-
-.card-img-top {
-  object-fit: cover;
-  height: 200px;
-} */
 
 @keyframes pulseGlow {
   0% {

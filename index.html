@@ -1,315 +1,503 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#inicio">Mi Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
-          <li class="nav-item"><a class="nav-link" href="#certificaciones">Certificaciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Inicio -->
-  <section id="inicio" class="d-flex align-items-center justify-content-center text-center">
-    <div class="overlay p-4 rounded">
-      <h1 class="display-4 fw-bold">
-        ¡Hola! Soy <span class="text-highlight">Matías León</span>
-      </h1>
-      <p class="lead">software Developer apasionado por la tecnología</p>
-      <a href="#contacto" class="btn btn-light mt-3">Contactame</a>
-    </div>
-  </section>
-
-  <!-- Sobre mí -->
-  <section id="sobre-mi" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Sobre mí</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <p>Hola, soy desarrollador web con experiencia en HTML, CSS, JavaScript y frameworks modernos. Me encanta crear sitios funcionales y atractivos.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matías León</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- <a class="navbar-brand" href="#inicio"> &lt;ML&gt;
+ </a> -->
+        <!-- <a class="navbar-brand" href="#inicio"><img class="logo" src="/assets/images/icons/greenPinkCode.png" alt=""></a> -->
+        <a class="navbar-brand" href="#inicio"><img class="logo" src="/assets/images/icons/code-icon-png-0.png" alt=""></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tecnologias">Tecnologías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificaciones">Certificaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-6">
-          <img src="./assets/images/noFoto.jpg" alt="Foto personal" class="img-fluid rounded">
-        </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Proyectos -->
+    <!-- Inicio -->
+    <section
+      id="inicio"
+      class="d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="overlay p-4 rounded">
+          <h1 class="display-2 fw-bold">
+            &lt;/MATIAS <span class="spanOne">LEON&gt; </span>
+          </h1>
+          <p class="lead"> <strong><span class="spanTwo">SOFTWARE DEVELOPER</span> </strong> APASIONADO POR LA TECNOLOGÍA</p>
+        <a href="#contacto" class="boton-home btn mt-3">CONTACTAME</a>
+      </div>
 
-<section id="proyectos" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Proyectos</h2>
-    <div class="row">
-      <!-- Proyecto 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/images/Proyectos/GeneralPaz.jpeg" class="card-img-top img-fluid" alt="Proyecto 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">General Paz Ecomerce</h5>
-            <p class="card-text">Descripción breve del proyecto que destaque sus funcionalidades clave.</p>
-            <a href="https://generalpaz.netlify.app/" target="_blank" class="btn btn-primary mt-auto">Ver proyecto</a>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Sobre mí</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>
+              Soy un estudiante avanzado de la Tecnicatura en Desarrollo de Software del ISPC, apasionado por la tecnología y profundamente interesado en el avance científico y tecnológico. A lo largo de mi formación he complementado mis estudios con diversos cursos.
+<br>
+Me destaco por ser una persona organizada, con una gran curiosidad y un fuerte compromiso con el aprendizaje continuo. Disfruto del trabajo en equipo y tengo facilidad para integrarme y colaborar en entornos dinámicos, donde el intercambio de ideas y conocimientos enriquece cada proyecto.
+<br>
+Mi objetivo es seguir aprendiendo y perfeccionando mis habilidades día a día, para poner mis conocimientos a disposición en un entorno laboral donde pueda aportar valor , contribuir al desarrollo de soluciones innovadoras y seguir creciendo como profesional en el mundo del desarrollo de software.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./assets/images/436384100_10232391996326061_8027148994045755745_n.jpg"
+              alt="Foto personal"
+              class="img-fluid rounded"
+            />
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Proyecto 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/images/Proyectos/codehouse.png" class="card-img-top img-fluid" alt="Proyecto 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Montaña Cerveza Artesanal</h5>
-            <p class="card-text">Breve resumen de qué hace el proyecto y qué tecnologías usa.</p>
-            <a href="https://leonmatias22.github.io/CODERHOUSE-proyecto-final/" target="_blank" class="btn btn-primary mt-auto">Ver proyecto</a>
+    <!-- Proyectos -->
+
+    <section id="proyectos" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Proyectos</h2>
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/Proyectos/GeneralPaz.jpeg"
+                class="card-img-top img-fluid"
+                alt="Proyecto 1"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">General Paz Ecomerce</h5>
+                <p class="card-text">
+                  Descripción breve del proyecto que destaque sus
+                  funcionalidades clave.
+                </p>
+                <a
+                  href="https://generalpaz.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary mt-auto"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/Proyectos/codehouse.png"
+                class="card-img-top img-fluid"
+                alt="Proyecto 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Montaña Cerveza Artesanal</h5>
+                <p class="card-text">
+                  Breve resumen de qué hace el proyecto y qué tecnologías usa.
+                </p>
+                <a
+                  href="https://leonmatias22.github.io/CODERHOUSE-proyecto-final/"
+                  target="_blank"
+                  class="btn btn-primary mt-auto"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/Proyectos/BienestarPlus.jpg"
+                class="card-img-top img-fluid"
+                alt="Proyecto 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Bienestar Plus</h5>
+                <p class="card-text">
+                  Bienestar+ es una aplicación web orientada al bienestar
+                  físico, mental y emocional. Permite a los usuarios gestionar
+                  hábitos saludables, acceder a recursos de salud mental y
+                  recibir recomendaciones personalizadas para mejorar su calidad
+                  de vida. Desarrollada por estudiantes de la Tecnicatura en
+                  Desarrollo de Software, esta app es parte de un proyecto
+                  académico colaborativo.
+                </p>
+                <a
+                  href="https://github.com/ISPC-Soluciones/Bienestar-Plus"
+                  target="_blank"
+                  class="btn btn-primary mt-auto"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/Proyectos/toolkit.jpg"
+                class="card-img-top img-fluid"
+                alt="Proyecto 2"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">ToolKit</h5>
+                <p class="card-text">
+                  Toolkit de Administración Jr. es una herramienta funcional
+                  basada en Bash, desarrollada para simplificar tareas básicas
+                  de administración en sistemas Linux (Ubuntu/Debian). Diseñada
+                  para ser utilizada por estudiantes, usuarios principiantes o
+                  administradores de sistemas en pequeñas startups o entornos
+                  educativos, este toolkit ofrece un menú interactivo y
+                  accesible desde la terminal que permite realizar tareas clave
+                  como monitoreo de procesos, análisis de recursos del sistema,
+                  gestión de usuarios, entre otras.
+                </p>
+                <a
+                  href="https://github.com/ISPC-Soluciones/toolkit-linux"
+                  target="_blank"
+                  class="btn btn-primary mt-auto"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="./assets/images/Proyectos/BTC3.png"
+                class="card-img-top img-fluid"
+                alt="Proyecto 3"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">ARGBroker</h5>
+                <p class="card-text">
+                  ARGBroker es una plataforma de inversión en el mercado de
+                  valores argentino, desarrollada en Python con MySQL. Diseñada
+                  específicamente para inversores locales, permite gestionar
+                  portafolios de inversión, realizar operaciones de compra y
+                  venta de acciones, y hacer un seguimiento detallado de los
+                  rendimientos.
+                </p>
+                <a
+                  href="https://github.com/BrokerTeamCoders-BTC/ARGBroker-Demo"
+                  target="_blank"
+                  class="btn btn-primary mt-auto"
+                  >Ver proyecto</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Proyecto 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/images/Proyectos/BienestarPlus.jpg" class="card-img-top img-fluid" alt="Proyecto 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Bienestar Plus</h5>
-            <p class="card-text">Bienestar+ es una aplicación web orientada al bienestar físico, mental y emocional. Permite a los usuarios gestionar hábitos saludables, acceder a recursos de salud mental y recibir recomendaciones personalizadas para mejorar su calidad de vida.
+    </section>
 
-Desarrollada por estudiantes de la Tecnicatura en Desarrollo de Software, esta app es parte de un proyecto académico colaborativo.</p>
-            <a href="https://github.com/ISPC-Soluciones/Bienestar-Plus" target="_blank" class="btn btn-primary mt-auto">Ver proyecto</a>
+    <!-- Sección Tecnologías -->
+
+    <section id="tecnologias" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Tecnologías</h2>
+        <div class="carousel-wrapper position-relative">
+          <button id="prevBtn" class="carousel-arrow left">&#10094;</button>
+          <div class="carousel-viewport overflow-hidden">
+            <div class="carousel-track d-flex align-items-center">
+              <img
+                src="assets/images/icons/HTML5_logo_and_wordmark.svg.png"
+                alt="HTML"
+                title="HTML"
+              />
+              <img src="assets/images/icons/css.png" alt="CSS" title="CSS" />
+              <img
+                src="assets/images/icons/Bootstrap_logo.svg.png"
+                alt="Bootstrap"
+                title="Bootstrap"
+              />
+              <img
+                src="assets/images/icons/js.png"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+              <img
+                src="assets/images/icons/typescript.svg"
+                alt="TypeScript"
+                title="TypeScript"
+              />
+              <img
+                src="assets/images/icons/react-1.png"
+                alt="React"
+                title="React"
+              />
+              <img
+                src="assets/images/icons/Vitejs-logo.png"
+                alt="Vite"
+                title="Vite"
+              />
+              <img
+                src="assets/images/icons/express-js-icon.png"
+                alt="Express"
+                title="Express"
+              />
+              <img
+                src="assets/images/icons/Node.js_logo.png"
+                alt="Node.js"
+                title="Node.js"
+              />
+              <img
+                src="assets/images/icons/mongodb-icon-1.svg"
+                alt="MongoDB"
+                title="MongoDB"
+              />
+              <img
+                src="assets/images/icons/python-3.png"
+                alt="Python"
+                title="Python"
+              />
+              <img
+                src="assets/images/icons/mysql-logo.svg"
+                alt="MySQL"
+                title="MySQL"
+              />
+              <img
+                src="assets/images/icons/microsoft-sql-server.svg"
+                alt="SQL Server"
+                title="SQL Server"
+              />
+            </div>
+          </div>
+          <button id="nextBtn" class="carousel-arrow right">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificaciones -->
+
+    <section id="certificaciones" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Certificaciones</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Certificado 1 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a
+                href="assets/images/certification/FullStack-RollingCode.png"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/certification/FullStack-RollingCode.png"
+                  class="card-img-top"
+                  alt="Certificado Full Stack"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Full Stack</h5>
+                <p class="card-text">Rolling Code · 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 2 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a
+                href="assets/images/certification/Introducción-al-Paradigma-de-Objetos-EducaciónIT.jpg"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/certification/Introducción-al-Paradigma-de-Objetos-EducaciónIT.jpg"
+                  class="card-img-top"
+                  alt="Certificado POO"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">POO</h5>
+                <p><small>Introducción al Paradigma de Objetos</small></p>
+                <p class="card-text">Educación IT · 2024</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 3 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a
+                href="assets/images/certification/DesarrolloWeb.jpg"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/certification/DesarrolloWeb.jpg"
+                  class="card-img-top"
+                  alt="Certificado Desarrollo Web"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Desarrollo Web</h5>
+                <p><small>Maquetado estático</small></p>
+                <p class="card-text">CoderHouse · 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 4 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a
+                href="assets/images/certification/ArgentinaPrograma.jpg"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/certification/ArgentinaPrograma.jpg"
+                  class="card-img-top"
+                  alt="Certificado SéProgramar"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">SéProgramar</h5>
+                <p><small>Lógica de Programación</small></p>
+                <p class="card-text">Argentina Programa · 2021</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 5 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a
+                href="assets/images/certification/Wordpress.jpg"
+                target="_blank"
+              >
+                <img
+                  src="assets/images/certification/Wordpress.jpg"
+                  class="card-img-top"
+                  alt="Certificado Wordpress"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Wordpress</h5>
+                <p class="card-text">Capacitarte · 2022</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificado 6 -->
+          <div class="col">
+            <div class="card h-100 certificado-card shadow-sm">
+              <a href="assets/images/noFoto.jpg" target="_blank">
+                <img
+                  src="assets/images/noFoto.jpg"
+                  class="card-img-top"
+                  alt="Certificado Reparación de PC"
+                />
+              </a>
+              <div class="card-body text-center">
+                <h5 class="card-title">Reparación de PC</h5>
+                <p class="card-text">Formación 21 · 2023</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Proyecto 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/images/Proyectos/toolkit.jpg" class="card-img-top img-fluid" alt="Proyecto 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">ToolKit</h5>
-            <p class="card-text">Toolkit de Administración Jr. es una herramienta funcional basada en Bash, desarrollada para simplificar tareas básicas de administración en sistemas Linux (Ubuntu/Debian). Diseñada para ser utilizada por estudiantes, usuarios principiantes o administradores de sistemas en pequeñas startups o entornos educativos, este toolkit ofrece un menú interactivo y accesible desde la terminal que permite realizar tareas clave como monitoreo de procesos, análisis de recursos del sistema, gestión de usuarios, entre otras.</p>
-            <a href="https://github.com/ISPC-Soluciones/toolkit-linux" target="_blank" class="btn btn-primary mt-auto">Ver proyecto</a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" />
           </div>
-        </div>
-      </div>
-
-      <!-- Proyecto 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow-sm border-0">
-          <img src="./assets/images/Proyectos/BTC3.png" class="card-img-top img-fluid" alt="Proyecto 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">ARGBroker</h5>
-            <p class="card-text">ARGBroker es una plataforma de inversión en el mercado de valores argentino, desarrollada en Python con MySQL. Diseñada específicamente para inversores locales, permite gestionar portafolios de inversión, realizar operaciones de compra y venta de acciones, y hacer un seguimiento detallado de los rendimientos.</p>
-            <a href="https://github.com/BrokerTeamCoders-BTC/ARGBroker-Demo" target="_blank" class="btn btn-primary mt-auto">Ver proyecto</a>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Sección Tecnologías -->
-
-<section id="tecnologias" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4">Tecnologías</h2>
-    <div class="carousel-wrapper position-relative">
-      <button id="prevBtn" class="carousel-arrow left">&#10094;</button>
-      <div class="carousel-viewport overflow-hidden">
-        <div class="carousel-track d-flex align-items-center">
-          <img src="assets/images/icons/HTML5_logo_and_wordmark.svg.png" alt="HTML" title="HTML">
-          <img src="assets/images/icons/css.png" alt="CSS" title="CSS">
-          <img src="assets/images/icons/Bootstrap_logo.svg.png" alt="Bootstrap" title="Bootstrap">
-          <img src="assets/images/icons/js.png" alt="JavaScript" title="JavaScript">
-          <img src="assets/images/icons/typescript.svg" alt="TypeScript" title="TypeScript">
-          <img src="assets/images/icons/react-1.png" alt="React" title="React">
-          <img src="assets/images/icons/Vitejs-logo.png" alt="Vite" title="Vite">
-          <img src="assets/images/icons/express-js-icon.png" alt="Express" title="Express">
-          <img src="assets/images/icons/Node.js_logo.png" alt="Node.js" title="Node.js">
-          <img src="assets/images/icons/mongodb-icon-1.svg" alt="MongoDB" title="MongoDB">
-          <img src="assets/images/icons/python-3.png" alt="Python" title="Python">
-          <img src="assets/images/icons/mysql-logo.svg" alt="MySQL" title="MySQL">
-          <img src="assets/images/icons/microsoft-sql-server.svg" alt="SQL Server" title="SQL Server">
-        </div>
-      </div>
-      <button id="nextBtn" class="carousel-arrow right">&#10095;</button>
-    </div>
-  </div>
-</section>
-  <section id="certificaciones" class="bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Certificaciones</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-
-      <!-- Certificado 1 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/certification/FullStack-RollingCode.png" target="_blank">
-            <img src="assets/images/certification/FullStack-RollingCode.png" class="card-img-top" alt="Certificado Full Stack">
+    <!-- Footer con redes sociales -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container justify-content-center align-items-center gap-4 flex-wrap">
+        <img class="mb-3" src="/assets/images/icons/Logo moderno de tecnología azul y verde.png" alt="Matias León Software Developer">
+        <br>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/mat%C3%ADas-le%C3%B3n-bord%C3%B3n-720543215/"
+            target="_blank"
+            class="me-3"
+          >
+            <img
+              src="assets/images/icons/icons8-linkedin-50.png"
+              alt="LinkedIn"
+              width="30"
+              height="30"
+            />
           </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">Full Stack</h5>
-            <p class="card-text">Rolling Code · 2025</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificado 2 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/certification/Introducción-al-Paradigma-de-Objetos-EducaciónIT.jpg" target="_blank">
-            <img src="assets/images/certification/Introducción-al-Paradigma-de-Objetos-EducaciónIT.jpg" class="card-img-top" alt="Certificado POO">
+          <a href="https://github.com/LeonMatias22" target="_blank">
+            <img
+              src="assets/images/icons/icons8-github-30.png"
+              alt="GitHub"
+              width="30"
+              height="30"
+            />
           </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">POO</h5>
-            <p><small>Introducción al Paradigma de Objetos</small></p>
-            <p class="card-text">Educación IT · 2024</p>
-          </div>
         </div>
       </div>
+    </footer>
 
-      <!-- Certificado 3 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/certification/DesarrolloWeb.jpg" target="_blank">
-            <img src="assets/images/certification/DesarrolloWeb.jpg" class="card-img-top" alt="Certificado Desarrollo Web">
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">Desarrollo Web</h5>
-            <p><small>Maquetado estático</small></p>
-            <p class="card-text">CoderHouse · 2022</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificado 4 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/certification/ArgentinaPrograma.jpg" target="_blank">
-            <img src="assets/images/certification/ArgentinaPrograma.jpg" class="card-img-top" alt="Certificado SéProgramar">
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">SéProgramar</h5>
-            <p><small>Lógica de Programación</small></p>
-            <p class="card-text">Argentina Programa · 2021</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificado 5 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/certification/Wordpress.jpg" target="_blank">
-            <img src="assets/images/certification/Wordpress.jpg" class="card-img-top" alt="Certificado Wordpress">
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">Wordpress</h5>
-            <p class="card-text">Capacitarte · 2022</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificado 6 -->
-      <div class="col">
-        <div class="card h-100 certificado-card shadow-sm">
-          <a href="assets/images/noFoto.jpg" target="_blank">
-            <img src="assets/images/noFoto.jpg" class="card-img-top" alt="Certificado Reparación de PC">
-          </a>
-          <div class="card-body text-center">
-            <h5 class="card-title">Reparación de PC</h5>
-            <p class="card-text">Formación 21 · 2023</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-      <!-- Repetir para los otros 5 certificados -->
-    </div>
-  </div>
-</section>
-
-
-  <!-- Contacto -->
-  <section id="contacto" class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Contacto</h2>
-      <form>
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="email">
-        </div>
-        <div class="mb-3">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer con redes sociales -->
-<footer class="bg-dark text-white text-center py-4">
-  <div class="container">
-    <p class="mb-2">&copy; 2025 Matías León. Todos los derechos reservados.</p>
-    <div>
-      <a href="https://www.linkedin.com/in/mat%C3%ADas-le%C3%B3n-bord%C3%B3n-720543215/" target="_blank" class="me-3">
-        <img src="assets/images/icons/icons8-linkedin-50.png" alt="LinkedIn" width="30" height="30">
-      </a>
-      <a href="https://github.com/LeonMatias22" target="_blank">
-        <img src="assets/images/icons/icons8-github-30.png" alt="GitHub" width="30" height="30">
-      </a>
-    </div>
-  </div>
-</footer>
-
-
-
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
-  <script src="script.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-  const carousel = document.getElementById('carousel-tecnologias');
-  const prevBtn = document.getElementById('btn-prev');
-  const nextBtn = document.getElementById('btn-next');
-
-  const logoWidth = 90; // ancho aproximado del logo + gap
-  let scrollPosition = 0;
-
-  nextBtn.addEventListener('click', () => {
-    scrollPosition += logoWidth;
-    carousel.style.transform = `translateX(-${scrollPosition}px)`;
-  });
-
-  prevBtn.addEventListener('click', () => {
-    scrollPosition = Math.max(0, scrollPosition - logoWidth);
-    carousel.style.transform = `translateX(-${scrollPosition}px)`;
-  });
-</script> -->
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
