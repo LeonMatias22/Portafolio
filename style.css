@@ -1,5 +1,6 @@
 body {
   scroll-behavior: smooth;
+  font-family:montserrat;
 }
 
 
@@ -20,18 +21,16 @@ section {
 
 #inicio .overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  /* display: inline-block; */
 }
 
-
-/* .text-highlight {
-  color: #ffc107;
-  font-weight: 700;
-} */
 
 #inicio h1,
 #inicio p {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav-item{
+  font-family:montserrat;
 }
 
 
@@ -56,15 +55,9 @@ h1{
   color: rgb(255, 0, 157);
 }
 
-.boton-home{
-  background-color:  rgb(58, 255, 183);
-  color: black;
-  border: none;
-}
-
 .boton-home:hover{
-  background-color:rgb(255, 0, 157);
-}
+  background-color:rgba(255, 0, 157, 0.861);
+} */
 
 footer a {
   transition: color 0.3s ease;
@@ -83,7 +76,7 @@ footer a {
 }
 
 .carousel-viewport {
-  width: 640px; /* 4 logos * 140px (img) + margen */
+  width: 640px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -91,7 +84,7 @@ footer a {
 .carousel-track {
   display: flex;
   transition: transform 0.3s ease-in-out;
-  gap: 20px; /* Espacio entre los logos */
+  gap: 20px;
 }
 
 .carousel-track img {
@@ -134,16 +127,21 @@ footer a {
   }
 }
 
+.card{
+   background-color: #171717;
+   color: aliceblue;
+}
+
+.card:hover{
+   transform: scale(1.05);
+  border: 2px solid rgba(58, 255, 183, 0.699);
+  animation: pulseGlow 1.5s infinite;
+}
+
 .certificado-card {
   transition: transform 0.4s ease, border 0.3s ease;
   border: 2px solid transparent;
   cursor: pointer;
-}
-
-.certificado-card:hover {
-  transform: scale(1.05);
-  border: 2px solid rgba(0, 123, 255, 0.7);
-  animation: pulseGlow 1.5s infinite;
 }
 
 .card-img-top {
@@ -161,4 +159,81 @@ footer a:hover img {
 .card:hover {
   transform: translateY(-5px);
   transition: transform 0.3s ease;
+}
+
+a, nav a, .navbar a {
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover, nav a:hover, .navbar a:hover {
+  color: rgb(58, 255, 183);
+  transform: scale(1.05);
+}
+
+.green-title{
+  color: rgb(58, 255, 183);
+}
+
+.card-title{
+  color: rgb(255, 0, 157);
+}
+
+.section-light{
+background-color: rgb(231, 231, 231);
+}
+.section-light h2{
+ color: rgb(255, 0, 157);
+}
+
+#contacto {
+  background-image: url(./assets/images/contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contacto h2{
+  color: rgb(255, 0, 157);
+}
+
+.boton{
+  color: #000000;
+  background-color: rgb(51, 221, 159);
+}
+
+.boton:hover{
+  color: #ffffff;
+  background-color: rgb(255, 0, 157);
+}
+
+.contact-form-wrapper {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.contact-form-wrapper .form-label,
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  color: white;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ccc;
+}
+
+.contact-form-wrapper input::placeholder,
+.contact-form-wrapper textarea::placeholder {
+  color: #ddd;
 }
