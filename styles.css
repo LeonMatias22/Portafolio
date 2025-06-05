@@ -205,6 +205,11 @@ footer a:hover img {
   height: auto;
   object-fit: contain;
   flex-shrink: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.08);
 }
 
 .carousel-arrow {
